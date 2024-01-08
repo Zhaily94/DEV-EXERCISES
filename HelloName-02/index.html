@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h1>Ejemplo de llamar a un método de JS desde HTML</h1>
+    <!-- Input para ingresar el nombre -->
+    <label for="nameInput">Name </label><input type="text" id="nameInput">
+    
+    <!-- Botón que llama a la función helloName pasando el valor del input -->
+    <button onclick="obtenerNombreYDecirHola()">Saludar</button>
+
+    <script>
+        function obtenerNombreYDecirHola() {
+            // Obtener el valor del input
+            const name = document.getElementById('nameInput').value;
+
+            // Llamar a la función helloName con el valor del input como argumento
+            helloName(name);
+        }
+    </script>
+</body>
+</html>
